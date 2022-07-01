@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Product_1 = require("./Product");
+const product_menu_1 = require("./product-menu");
+const product_management_1 = require("./product-management");
+let productMenu = new product_menu_1.ProductMenu();
+let productManagement = new product_management_1.ProductManagement();
+let product1 = new Product_1.Product("bread", "food", 15, 30, "01/07/2022", "instant food");
+let product2 = new Product_1.Product("dumpling", "food", 24, 40, "01/07/2022", "instant food");
+let product3 = new Product_1.Product("glasses", "accessories", 30, 60, "01/07/2022", "wear on face");
+let product4 = new Product_1.Product("Note9", "phone", 60, 120, "01/07/2022", "surf Facebook");
+let product5 = new Product_1.Product("Nike", "shoes", 40, 80, "01/07/2022", "wear on foot");
+productManagement.createNew(product1);
+productManagement.createNew(product2);
+productManagement.createNew(product3);
+productManagement.createNew(product4);
+productManagement.createNew(product5);
+productMenu.run();
